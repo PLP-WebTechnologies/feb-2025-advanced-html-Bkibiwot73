@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        /*Add border to the table*/
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            margin-left: 5px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Types Of Cars</h1>
+    </header>
+
+    <!--Ordered List with Roman Numerals, Unordered list with circle and Description List-->
+    <section>
+        <h2>America brands</h2>
+            <!--Ordered List-->
+            <ol type="I">
+                <li>Tesla</li>
+                <li>Jeep</li>
+                <li>Chevrolet</li>
+                <li>Ford</li>
+                <li>Dodge</li>
+            </ol>
+
+        <h2>European brands</h2>
+            <!--Unordered List-->
+            <ul type="circle">
+                <li>BMW</li>
+                <li>Porsche</li>
+                <li>Lamborghini</li>
+                <li>Bentley</li>
+                <li>Ferarri</li>
+            </ul>
+        
+        <h2>Other brands</h2>
+            <!--Description List-->
+            <dl>
+                <dt>Korean</dt>
+                <dd>- Hyundai</dd>
+                <dt>Chinese</dt>
+                <dd>- Geely</dd>
+            </dl>
+    </section>
+
+    <!--External Images from pexels-->
+    <section>
+        <h2>Images of Cars</h2>
+        <img src="https://images.pexels.com/photos/1682666/pexels-photo-1682666.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car Image 1" width="600" height="600">
+        <img src="https://images.pexels.com/photos/6039204/pexels-photo-6039204.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car Image 2" width="600" height="600">
+        <img src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car Image 3" width="600" height="600">
+        <img src="https://images.pexels.com/photos/1210630/pexels-photo-1210630.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car Image 4" width="600" height="600">
+    </section>
+
+    <!--Table of 5 contacts-->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>123 Main St, Nairobi</td>
+                <td>+254712345678</td>
+                <td>alice@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Brian Kibet</td>
+                <td>456 Elm St, Eldoret</td>
+                <td>+254701234567</td>
+                <td>brian@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Catherine Wanjiku</td>
+                <td>789 Oak St, Nairobi</td>
+                <td>+254798765432</td>
+                <td>catherine@gmail.com</td>
+            </tr>
+            <tr>
+                <td>David Mwangi</td>
+                <td>321 Pine St, Nakuru</td>
+                <td>+254734567890</td>
+                <td>david@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Emily Njeri</td>
+                <td>123 Main St, Nairobi</td>
+                <td>+254756789012</td>
+                <td>emily@gmail.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!--Registration Form-->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="">
+            <!--Full Name Field-->
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your full name" required><br><br>
+
+            <!--Email Field-->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required> <br><br>
+
+            <!--Password Field-->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your strong password" required><br><br>
+
+            <!--Date Field-->
+            <label for="birthday">Date of Birth:</label><br>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+
+            <!--Dropdown-->
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Burundi">Burundi</option>
+            </select><br><br>
+
+            <!--Radio buttons-->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label><br><br>
+
+            <!--Checkboxes-->
+            <p>Hobbies:</p>
+            <input type="checkbox" id="reading" name="reading" value="Reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="swimming" name="swimming" value="Swimming">
+            <label for="swimming">Swimming</label><br>
+            <input type="checkbox" id="dancing" name="dancing" value="Dancing">
+            <label for="dancing">Dancing</label><br>
+            <input type="checkbox" id="singing" name="singing" value="Singing">
+            <label for="singing">Singing</label><br><br>
+
+            <!--Submit button-->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2025. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
